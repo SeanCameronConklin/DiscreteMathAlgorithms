@@ -1,5 +1,7 @@
 import math
 
+# Reference: https://primes.utm.edu/howmany.html
+
 play = True
 
 while play:
