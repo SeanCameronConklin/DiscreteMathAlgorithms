@@ -16,11 +16,11 @@ while play:
     y = int(input('Enter the larger of two numbers: '))
     amount = int(input('Enter the number of prime numbers to find between the two numbers: '))
     if x == 1:
-        primeEst = (1 / numpy.log(y)) * 100
+        primeEst = (y / numpy.log(y))
     else:
-        primeEst = ((y - x) / numpy.log(y))
+        primeEst = (y / numpy.log(y)) - (x / numpy.log(x))
     print()
-    print("Given the inputs, the Prime Number Theorem would estimate", int(round(primeEst)), "of non-inclusive prime numbers between", x, "and", y)
+    print("Given the inputs, the Prime Number Theorem would estimate", int(round(primeEst)), "non-inclusive prime numbers between", x, "and", y)
     print()
     print("Here are up to", amount, "non-inclusive prime numbers between", x, "and", y)
     print ()
